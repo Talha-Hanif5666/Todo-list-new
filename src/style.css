@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+  background-color: rgb(250, 190, 80);
+  font-family: "Quicksand", sans-serif;
+  color: rgb(4, 32, 68);
+}
+
+.container {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 50%;
+  margin: auto;
+  margin-top: 8%;
+  border: solid 2px rgb(2, 2, 2);
+}
+
+.container h1 {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.head p {
+  align-self: flex-start;
+}
+
+.head i {
+  align-self: center;
+}
+
+.list-item li {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  gap: 20px;
+}
+
+li .toggle {
+  align-self: center;
+  height: 15px;
+  width: 10px;
+  cursor: pointer;
+}
+
+form .input-items {
+  padding: 5px 5px;
+  border: none;
+  border-bottom: 1px solid rgb(52, 52, 52);
+  margin-left: -30px;
+}
+
+form .input-items::placeholder {
+  color: rgb(102, 102, 102);
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.clear {
+  margin-bottom: 20px;
+  background: none;
+  padding: 15px 45px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(227, 227, 227);
+}
+
+.clear:hover {
+  transition: 0.4s ease;
+  background-color: rgb(192, 192, 192);
+}
