@@ -9,7 +9,6 @@ let listArr = [];
 
 const showTasks = () => {
   const storedData = localStorage.getItem('data');
-  // index = 0;
   if (storedData === null) {
     listArr = [];
   } else {
@@ -31,8 +30,6 @@ const showTasks = () => {
        <i class="fa-solid fa-trash delete" id="del" onclick="deleteTask(${element.index});"></i>       
 </div>
        </li><hr>`;
-      // const checkTask = document.getElementById('task${element.index}');
-      // checkTask.style.textDecoration = 'line-through';
     } else {
       newLiTag += `<li>
        <div class="left">
