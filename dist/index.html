@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
-    <title>To-Do-List</title>
+    <title>To Do List</title>
 <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
 <body>
     <section class="container">
-    <h1>List of daily tasks</h1>
+    <h1>My To Do Lists</h1>
     <div class="form">
         <div class="head"><p>Today's to do</p><i class="fa-sharp fa-solid fa-arrows-rotate"></i></div>
-        <form>
-            <input type="text" class="input-items" placeholder="Add to your list...">
-            <button class="btn-form" type="submit">↵</button>
+        <form class="list-form">
+            <input type="text" class="task-input" placeholder="Add tasks to your list..." required>
+           <button type="submit" class="add"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
         </form>
-        <ul class="list-item">
+        <ul class="lists">
         </ul>
         <button class="clear" >Clear all completed</button>
     </div>
