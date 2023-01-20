@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body {
-  background-color: rgb(250, 190, 80);
+  background-color: rgb(63, 180, 174);
   font-family: "Quicksand", sans-serif;
   color: rgb(4, 32, 68);
 }
@@ -17,67 +17,89 @@ body {
   margin: auto;
   margin-top: 8%;
   border: solid 2px rgb(2, 2, 2);
+  padding: 20px 20px 20px 20px;
 }
 
 .container h1 {
   font-size: 2em;
   font-weight: bolder;
+  text-align: center;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 .form .head {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
+  justify-content: space-between;
 }
 
-.head p {
-  align-self: flex-start;
+form i {
+  font-size: 1.35em;
+  padding-top: 8px;
+  cursor: pointer;
+  margin-right: -10px;
 }
 
 .head i {
-  align-self: center;
+  padding: 16px 0;
 }
 
-.list-item li {
+.form ul {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.lists li {
   display: flex;
   flex-direction: row;
   height: 50px;
+  justify-content: space-between;
+}
+
+form {
+  width: 100%;
+  display: flex;
   gap: 20px;
 }
 
-li .toggle {
-  align-self: center;
-  height: 15px;
-  width: 10px;
-  cursor: pointer;
-}
-
-form .input-items {
-  padding: 5px 5px;
+form .add {
+  background: none;
   border: none;
-  border-bottom: 1px solid rgb(52, 52, 52);
-  margin-left: -30px;
 }
 
-form .input-items::placeholder {
+form i:hover {
+  transition: 0.3s ease;
+  color: #184e9e;
+}
+
+form .task-input {
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 1px solid rgb(104, 104, 104);
+}
+
+form .task-input::placeholder {
   color: rgb(102, 102, 102);
+  font-size: 1.2em;
+  font-family: "Quicksand", sans-serif;
   font-style: italic;
   opacity: 0.7;
 }
 
+form .task-input:focus {
+  outline: none;
+  font-size: 1em;
+  font-family: "Quicksand", sans-serif;
+}
+
 .clear {
   margin-bottom: 20px;
-  background: none;
   padding: 15px 45px;
   border: none;
   cursor: pointer;
@@ -87,4 +109,52 @@ form .input-items::placeholder {
 .clear:hover {
   transition: 0.4s ease;
   background-color: rgb(192, 192, 192);
+}
+
+.lists .left {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  margin: 0;
+}
+
+.left input {
+  border: none;
+  font-size: 1.2em;
+  font-family: "Quicksand", sans-serif;
+}
+
+.left input:focus {
+  outline: none;
+}
+
+.menu-pop .btn {
+  display: none;
+}
+
+.lists .right {
+  margin-top: 10px;
+  font-size: 1.25em;
+  display: flex;
+  gap: 10px;
+}
+
+.right i:hover {
+  color: #184e9e;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.save {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.fa-arrows-rotate:hover {
+  color: #184e9e;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
